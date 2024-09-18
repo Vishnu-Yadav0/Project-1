@@ -21,7 +21,7 @@
      
     </properties>
 
-    <distributionManagement>
+    <!-- <distributionManagement>
 
         <repository>
             <id>release</id>
@@ -35,6 +35,14 @@
             <url>http://3.140.246.215:8082/artifactory/libs-snapshot-local/</url>
         </snapshotRepository>
     
+    </distributionManagement> -->
+
+    <distributionManagement>
+        <repository>
+            <id>central</id>
+            <name>jfrog.server.io-releases</name>
+            <url>http://3.140.246.215:8081/artifactory/libs-release-local</url>
+        </repository>
     </distributionManagement>
 
     <dependencies>
