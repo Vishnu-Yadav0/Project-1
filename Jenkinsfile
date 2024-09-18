@@ -29,7 +29,7 @@ node {
       sh "'${mvnHome}/bin/mvn' package"
   }
   stage ('Deploy') {
-      sh "'${mvnHome}/bin/mvn' deploy -e"
+      sh "'${mvnHome}/bin/mvn' deploy -X"
   }
   stage ('Deliver & Deployment') {
       sh 'curl -u admin:redhat@123 -T target/**.war "http://3.140.243.170:8080/manager/text/deploy?path=/JavaProject&update=true"'
