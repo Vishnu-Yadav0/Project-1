@@ -2,7 +2,7 @@
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.aws.codestar.projecttemplates</groupId>
-    <artifactId>javaproject</artifactId>
+    <artifactId>c3ops</artifactId>
     <version>1.1.0</version>
     <!-- <version>1.1.0-snapshot</version> -->
     <packaging>war</packaging>
@@ -104,7 +104,7 @@
                     <version>3.2.2</version>
                     <configuration>
                         <warSourceDirectory>src/main/webapp</warSourceDirectory>
-                        <warName>javaproject</warName>
+                        <warName>c3opslmsapp</warName>
                         <failOnMissingWebXml>false</failOnMissingWebXml>
                     </configuration>
                 </plugin>
@@ -127,6 +127,6 @@
                 </plugin>
             </plugins>
         </pluginManagement>
-        <finalName>javaproject</finalName>
+        <finalName>c3opslmsapp</finalName>
     </build>
 </project>
