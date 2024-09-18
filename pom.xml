@@ -37,14 +37,6 @@
     
     </distributionManagement>
 
-    <!-- <distributionManagement>
-        <repository>
-            <id>central</id>
-            <name>jfrog.server.io-releases</name>
-            <url>http://3.21.204.190:8081/artifactory/libs-release-local</url>
-        </repository>
-    </distributionManagement> -->
-
     <dependencies>
         <dependency>
             <groupId>org.springframework</groupId>
