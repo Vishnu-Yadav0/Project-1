@@ -2,7 +2,7 @@
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.aws.codestar.projecttemplates</groupId>
-    <artifactId>c3ops</artifactId>
+    <artifactId>javaproject</artifactId>
     <version>1.1.0</version>
     <!-- <version>1.1.0-snapshot</version> -->
     <packaging>war</packaging>
@@ -21,27 +21,20 @@
      
     </properties>
 
-    <!-- <distributionManagement>
+    <distributionManagement>
 
         <repository>
-            <id>central</id>
-            <name>libs-release</name>
-            <url>ttp://13.59.211.150:8081/artifactory/libs-release</url>
+            <id>release</id>
+            <name>libs-release-local</name>
+            <url>http://13.59.211.150:8082/artifactory/libs-release-local/</url>
         </repository>
     
         <snapshotRepository>
             <id>snapshots</id>
-            <name>libs-snapshot</name>
-            <url>http://13.59.211.150:8081/artifactory/libs-snapshot</url>
+            <name>libs-snapshot-local</name>
+            <url>http://13.59.211.150:8082/artifactory/libs-snapshot-local/</url>
         </snapshotRepository>
     
-    </distributionManagement> -->
-    <distributionManagement>
-        <repository>
-            <id>javaproject-javaProject</id>
-            <name>javaproject-javaProject</name>
-            <url>https://javaproject-851725540108.d.codeartifact.us-east-2.amazonaws.com/maven/javaProject/</url>
-        </repository>
     </distributionManagement>
     <dependencies>
         <dependency>
@@ -133,6 +126,6 @@
                 </plugin>
             </plugins>
         </pluginManagement>
-        <finalName>c3opslmsapp</finalName>
+        <finalName>java-app</finalName>
     </build>
 </project>
