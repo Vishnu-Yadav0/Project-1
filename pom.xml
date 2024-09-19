@@ -21,7 +21,7 @@
      
     </properties>
 
-    <distributionManagement>
+    <!-- <distributionManagement>
 
         <repository>
             <id>central</id>
@@ -35,8 +35,14 @@
             <url>http://13.59.211.150:8081/artifactory/libs-snapshot</url>
         </snapshotRepository>
     
+    </distributionManagement> -->
+    <distributionManagement>
+        <repository>
+            <id>javaproject-javaProject</id>
+            <name>javaproject-javaProject</name>
+            <url>https://javaproject-851725540108.d.codeartifact.us-east-2.amazonaws.com/maven/javaProject/</url>
+        </repository>
     </distributionManagement>
-
     <dependencies>
         <dependency>
             <groupId>org.springframework</groupId>

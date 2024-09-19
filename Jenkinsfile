@@ -29,12 +29,12 @@ node {
       sh "'${mvnHome}/bin/mvn' package"
   }
   stage ('Deploy') {
-      sh "'${mvnHome}/bin/mvn' deploy -X"
+      sh "'${mvnHome}/bin/mvn' deploy"
   }
   stage ('Deliver & Deployment') {
-      sh 'curl -u admin:redhat@123 -T target/**.war "http://3.140.243.170:8080/manager/text/deploy?path=/JavaProject&update=true"'
+      sh 'curl -u admin:redhat@123 -T target/**.war "http://18.188.194.0:8080/manager/text/deploy?path=/JavaProject&update=true"'
   }
   stage ('SmokeTest') {
-      sh 'curl --retry-delay 10 --retry 5 "http://3.140.243.170:8080/JavaProject"'
+      sh 'curl --retry-delay 10 --retry 5 "http://18.188.194.0:8080/JavaProject"'
   }
 }
