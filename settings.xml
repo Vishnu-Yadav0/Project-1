@@ -51,7 +51,7 @@
     </server>
     <server>
       <username>${security.getCurrentUsername()}</username>
-      <password>${security.getEscapedEncryptedPassword()!"*** Insert encrypted password here ***"}</password>
+      <password>Redhat@123</password>
       <id>snapshots</id>
     </server>
   </servers>
